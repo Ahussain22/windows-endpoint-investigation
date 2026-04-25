@@ -63,7 +63,8 @@ tasklist
   C:\Users\Public\
   C:\Temp\
   ```
-
+![Tasklist](./images/tasklist.png)
+![Tasklist](./images/tasklist1.png)
 ---
 
 ## 🌐 Step 2: Analyse Network Connections
@@ -96,6 +97,8 @@ These indicate normal web browsing activity.
   1337 (commonly used by attackers)
   ```
 - Persistent connections to the same unknown IP
+![Netstat](./images/netstat-ano.png)
+![Netstat](./images/netstat-ano1.png)
 
 ---
 
@@ -123,7 +126,7 @@ This is a legitimate Windows service.
   unknown.exe
   ```
 - Especially if making external connections
-
+![PID](./images/pid.png)
 ---
 
 ## ⚙️ Step 4: Check Startup Programs (Persistence)
@@ -153,7 +156,7 @@ wmic startup get caption,command
   ```
 
 This could indicate malware persistence.
-
+![Startup](./images/startup.png)
 ---
 
 ## 🛠️ Step 5: Analyse Services
@@ -176,7 +179,7 @@ services.msc
 - Services with:
   - No description
   - Startup type set to **Automatic**
-
+![Services](./images/services.png)
 ---
 
 ## ⏰ Step 6: Check Scheduled Tasks
@@ -201,7 +204,7 @@ taskschd.msc
 - Tasks triggered:
   - At login
   - Every few minutes
-
+![Task Scheduler](./images/taskschd.png)
 ---
 
 ## 🛡️ Step 7: Review Windows Defender
@@ -222,7 +225,7 @@ Windows Security → Protection History
   Backdoor
   Suspicious behaviour
   ```
-
+![Windows Defender](./images/protection.png)
 ---
 
 ## 📌 Conclusion
